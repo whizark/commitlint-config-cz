@@ -20,12 +20,15 @@
     },
     "files"           : [
         "index.js",
-        "config"
+        "lib"
     ],
     "main"            : "./index.js",
     "repository"      : {
         "type": "git",
         "url" : "https://github.com/whizark/conventional-changelog-lint-config.git"
+    },
+    "dependencies"    : {
+        "app-root-path": "~2.0.1"
     },
     "devDependencies" : {
         "conventional-changelog-lint": "latest"
