@@ -1,0 +1,36 @@
+{
+    "name"            : "@whizark/conventional-changelog-lint-config",
+    "version"         : "0.0.0",
+    "description"     : "conventional-changelog-lint sharable configuration files",
+    "keywords"        : [
+        "git",
+        "commit",
+        "conventional-changelog",
+        "conventional-changelog-lint-config",
+        "lint"
+    ],
+    "homepage"        : "https://github.com/whizark/conventional-changelog-lint-config",
+    "bugs"            : {
+        "url": "https://github.com/whizark/conventional-changelog-lint-config/issues"
+    },
+    "license"         : "MIT",
+    "author"          : {
+        "name": "Whizark",
+        "url" : "http://whizark.com"
+    },
+    "files"           : [
+        "index.js",
+        "config"
+    ],
+    "main"            : "./index.js",
+    "repository"      : {
+        "type": "git",
+        "url" : "https://github.com/whizark/conventional-changelog-lint-config.git"
+    },
+    "devDependencies" : {
+        "conventional-changelog-lint": "https://github.com/marionebl/conventional-changelog-lint.git#master"
+    },
+    "peerDependencies": {
+        "conventional-changelog-lint": "~1.1.0"
+    }
+}
