@@ -20,7 +20,7 @@ npm install conventional-changelog-lint-config-cz --save
 
 ## Usage
 
-Extend `@whizark/conventional-changelog-lint` in
+Extend `conventional-changelog-lint-config-cz` in
 `.conventional-changelog-lintrc`.
 
 ```json
