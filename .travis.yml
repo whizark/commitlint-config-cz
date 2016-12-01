@@ -37,7 +37,7 @@ deploy:
           secure: Sa1u50JXfbBip4FTbRef5X/P6thAHUYFBQcrjiJ9kC4iSaCkwDOAiuDns5Sjpye2KiwrOgPACaYGTvESLlzQRi3A6FifOqnpAvH/EUpzLcyr4oQzcjvkTXOhLVxcwvEkuHL0pw8HkzDTAeT53ORrP3/MpVubfje5+1rVKBhPJM763PFyC14A488RxSaKSEK4maqV2jg/R8JN1igPu7JjOBLys9XaTBBkuVNSKFk7UbWlwVZ/xrkxCupaE0IfClLUJV10XG71Q3PIbEMw4Q3Dxv783SzIjuYQ3rUHRc0o5kdHv3pOccsI7cvaA+DyHlKbHSWcpiTbJOeAXKrXEVnl6HMPFMKdBn4KlVUNCT8l1BjksPtpcWiTS+ipvvVXhv03kQQuIH1xyeZNhjRTq9/3EwhOfQ//PEh09tsfRG2Vwro6bgGnhMhOnLE+EXk7Qv2oAYahWchGGkSUCEV8ybGIiuV+QvvU/LV5eu3TrcqbRAuVdHYlc9LL4eh7cZbWMULZFrxbOYHopJz0/08GOHnfOi5bzoAgU6+AUhHIw7EAWt3ukXzHV5L8mPjv/AknAl6bHXNciLAFrzeOCAtwoyaIi6si6gxc0CKO7nFzS69sC0jVBvHdNFSYUbb6+7/Nk5kUILhmJHew4Gq+EeiqY00T2rg8Y7+pDru0VXvKQu9Om2c=
       on:
           node: 6
-          repo: whizark/conventional-changelog-lint-config
+          repo: whizark/conventional-changelog-lint-config-cz
           branch: master
           tags: true
 
