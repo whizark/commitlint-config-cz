@@ -145,9 +145,6 @@ module.exports = {
         merge  : [
             '/^(Merge pull request)|(Merge (.*?) into (.*?)$)/',
         ],
-        release: [
-            '/^\\d+.\\d+.\\d+$/',
-        ],
         revert : [
             '/^revert: (.*)/',
         ],
