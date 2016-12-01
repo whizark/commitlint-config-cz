@@ -28,7 +28,7 @@
         "url" : "https://github.com/whizark/conventional-changelog-lint-config.git"
     },
     "devDependencies" : {
-        "conventional-changelog-lint": "https://github.com/marionebl/conventional-changelog-lint.git#master"
+        "conventional-changelog-lint": "latest"
     },
     "peerDependencies": {
         "conventional-changelog-lint": "~1.1.0"
