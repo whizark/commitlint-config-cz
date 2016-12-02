@@ -1,6 +1,6 @@
 {
     "name"            : "conventional-changelog-lint-config-cz",
-    "version"         : "0.1.0",
+    "version"         : "0.1.1",
     "description"     : "conventional-changelog-lint sharable configuration files",
     "keywords"        : [
         "git",
