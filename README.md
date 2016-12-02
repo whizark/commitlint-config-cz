@@ -2,6 +2,7 @@
 
 [![npm][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
+[![Coverage Status][coveralls-image]][coveralls-url]
 
 [conventional-changelog-lint][] sharable configuration files.
 
@@ -37,6 +38,9 @@ Extend `conventional-changelog-lint-config-cz` in
 
 [npm-image]: https://img.shields.io/npm/v/conventional-changelog-lint-config-cz.svg
 [npm-url]: https://www.npmjs.com/conventional-changelog-lint-config-cz
+
+[coveralls-image]: https://coveralls.io/repos/whizark/conventional-changelog-lint-config-cz/badge.svg?branch=master&service=github
+[coveralls-url]: https://coveralls.io/github/whizark/conventional-changelog-lint-config-cz?branch=master
 
 [travis-image]: https://travis-ci.org/whizark/conventional-changelog-lint-config-cz.svg?branch=master
 [travis-url]: https://travis-ci.org/whizark/conventional-changelog-lint-config-cz
