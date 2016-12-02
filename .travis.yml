@@ -29,6 +29,10 @@ script:
     - npm install "$TRAVIS_BUILD_DIR" >/dev/null && npm uninstall "$TRAVIS_BUILD_DIR" >/dev/null
     - node -e "const config = require('${TRAVIS_REPO_SLUG##*/}');"
     - cd "$TRAVIS_BUILD_DIR"
+    - npm run ci:test
+
+after_success:
+    - npm run ci:coveralls
 
 deploy:
     - provider: npm

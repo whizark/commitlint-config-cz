@@ -27,11 +27,27 @@
         "type": "git",
         "url" : "https://github.com/whizark/conventional-changelog-lint-config-cz.git"
     },
+    "scripts"         : {
+        "test:mocha"      : "mocha --require intelli-espower-loader --timeout 30000 --reporter spec \"./test/**/*.spec.js\"",
+        "test"            : "nyc npm run --silent test:mocha",
+        "coverage"        : "nyc report",
+        "watch:test:mocha": "mocha --require intelli-espower-loader --timeout 30000 --reporter spec --watch --growl \"./test/**/*.spec.js\"",
+        "watch:test"      : "npm run watch:test:mocha",
+        "watch"           : "npm run watch:test",
+        "ci:test:mocha"   : "npm run test:mocha",
+        "ci:test"         : "nyc npm run ci:test:mocha",
+        "ci:coveralls"    : "nyc report --reporter=text-lcov | coveralls"
+    },
     "dependencies"    : {
         "app-root-path": "~2.0.1"
     },
     "devDependencies" : {
-        "conventional-changelog-lint": "latest"
+        "conventional-changelog-lint": "latest",
+        "coveralls"                  : "~2.11.15",
+        "intelli-espower-loader"     : "~1.0.1",
+        "mocha"                      : "~3.2.0",
+        "nyc"                        : "~10.0.0",
+        "power-assert"               : "~1.4.2"
     },
     "peerDependencies": {
         "conventional-changelog-lint": "~1.1.0"
