@@ -32,8 +32,8 @@
         "test"            : "nyc npm run --silent test:mocha",
         "coverage"        : "nyc report",
         "watch:test:mocha": "mocha --require intelli-espower-loader --timeout 30000 --reporter spec --watch --growl \"./test/**/*.spec.js\"",
-        "watch:test"      : "npm run watch:test:mocha",
-        "watch"           : "npm run watch:test",
+        "watch:test"      : "npm run --silent watch:test:mocha",
+        "watch"           : "npm run --silent watch:test",
         "ci:test:mocha"   : "npm run test:mocha",
         "ci:test"         : "nyc npm run ci:test:mocha",
         "ci:coveralls"    : "nyc report --reporter=text-lcov | coveralls"
