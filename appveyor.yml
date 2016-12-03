@@ -1,0 +1,39 @@
+version: '{build}'
+
+shallow_clone: true
+
+clone_depth: 1
+
+environment:
+    matrix:
+        - nodejs_version: 4
+        - nodejs_version: 6
+        - nodejs_version: 7
+
+matrix:
+    fast_finish: true
+
+cache:
+    - node_modules
+    - '%APPDATA%\npm-cache'
+
+install:
+    - ps: Install-Product node $env:nodejs_version
+    - npm config set spin false
+    - npm config set progress false
+    - npm install -g npm@latest
+    - npm prune
+    - npm update
+
+build: off
+
+test_script:
+    - node --version
+    - npm --version
+    - npm run ci:test
+
+notifications:
+    - provider: Email
+      on_build_success: false
+      on_build_failure: false
+      on_build_status_changed: false
