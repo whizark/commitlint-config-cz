@@ -17,7 +17,7 @@ If `.cz-config.js` that is for [@whizark/cz-cli][] or
 Install `conventional-changelog-lint-config-cz` as a local dependency.
 
 ```sh
-npm install conventional-changelog-lint-config-cz --save
+npm install conventional-changelog-lint-config-cz --save-dev
 ```
 
 ## Usage
