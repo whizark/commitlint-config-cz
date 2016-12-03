@@ -17,7 +17,7 @@ cache:
 before_install:
     - npm config set spin false
     - npm config set progress false
-    - npm install -g npm
+    - npm install -g npm@latest
 
 install:
     - npm prune
