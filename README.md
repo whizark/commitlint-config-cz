@@ -2,6 +2,7 @@
 
 [![npm][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
+[![Build status][appveyor-image]][appveyor-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 
 [conventional-changelog-lint][] sharable configuration files.
@@ -44,3 +45,6 @@ Extend `conventional-changelog-lint-config-cz` in
 
 [travis-image]: https://travis-ci.org/whizark/conventional-changelog-lint-config-cz.svg?branch=master
 [travis-url]: https://travis-ci.org/whizark/conventional-changelog-lint-config-cz
+
+[appveyor-image]: https://ci.appveyor.com/api/projects/status/github/whizark/conventional-changelog-lint-config-cz?branch=master&svg=true
+[appveyor-url]: https://ci.appveyor.com/project/whizark/conventional-changelog-lint-config-cz/branch/master
