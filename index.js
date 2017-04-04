@@ -20,7 +20,7 @@ module.exports = {
             0,
         ],
         'body-tense'          : [
-            2,
+            1,
             'always',
             [
                 'present-imperative',
@@ -41,7 +41,7 @@ module.exports = {
             0,
         ],
         'footer-tense'        : [
-            2,
+            1,
             'always',
             [
                 'present-imperative',
