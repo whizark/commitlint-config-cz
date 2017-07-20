@@ -1,17 +1,18 @@
 {
-    "name"            : "conventional-changelog-lint-config-cz",
+    "name"            : "commitlint-config-cz",
     "version"         : "0.3.0",
-    "description"     : "conventional-changelog-lint sharable configuration files",
+    "description"     : "commitlint sharable configuration files",
     "keywords"        : [
         "git",
         "commit",
+        "commitlint",
         "conventional-changelog",
         "conventional-changelog-lint-config",
         "lint"
     ],
-    "homepage"        : "https://github.com/whizark/conventional-changelog-lint-config-cz",
+    "homepage"        : "https://github.com/whizark/commitlint-config-cz",
     "bugs"            : {
-        "url": "https://github.com/whizark/conventional-changelog-lint-config-cz/issues"
+        "url": "https://github.com/whizark/commitlint-config-cz/issues"
     },
     "license"         : "MIT",
     "author"          : {
@@ -25,7 +26,7 @@
     "main"            : "./index.js",
     "repository"      : {
         "type": "git",
-        "url" : "https://github.com/whizark/conventional-changelog-lint-config-cz.git"
+        "url" : "https://github.com/whizark/commitlint-config-cz.git"
     },
     "scripts"         : {
         "test:mocha"      : "mocha --require intelli-espower-loader --timeout 30000 --reporter spec \"./test/**/*.spec.js\"",
@@ -42,14 +43,14 @@
         "app-root-path": "~2.0.1"
     },
     "devDependencies" : {
-        "conventional-changelog-lint": "latest",
-        "coveralls"                  : "~2.13.0",
-        "intelli-espower-loader"     : "~1.0.1",
-        "mocha"                      : "~3.4.2",
-        "nyc"                        : "~11.0.3",
-        "power-assert"               : "~1.4.4"
+        "@commitlint/cli"       : "latest",
+        "coveralls"             : "~2.13.0",
+        "intelli-espower-loader": "~1.0.1",
+        "mocha"                 : "~3.4.2",
+        "nyc"                   : "~11.0.3",
+        "power-assert"          : "~1.4.4"
     },
     "peerDependencies": {
-        "conventional-changelog-lint": "~1.1.9"
+        "@commitlint/cli": "~3.0.3"
     }
 }
