@@ -22,8 +22,7 @@ npm install commitlint-config-cz --save-dev
 
 ## Usage
 
-Extend `commitlint-config-cz` in
-`.conventional-changelog-lintrc`.
+Extend `commitlint-config-cz` in `commitlint.config.js`.
 
 ```json
 {
