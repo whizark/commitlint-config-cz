@@ -6,6 +6,7 @@
         "git",
         "commit",
         "commitlint",
+        "commitlint-config",
         "conventional-changelog",
         "conventional-changelog-lint-config",
         "lint"
