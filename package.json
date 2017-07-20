@@ -45,9 +45,9 @@
         "conventional-changelog-lint": "latest",
         "coveralls"                  : "~2.13.0",
         "intelli-espower-loader"     : "~1.0.1",
-        "mocha"                      : "~3.2.0",
-        "nyc"                        : "~10.2.0",
-        "power-assert"               : "~1.4.2"
+        "mocha"                      : "~3.4.2",
+        "nyc"                        : "~11.0.3",
+        "power-assert"               : "~1.4.4"
     },
     "peerDependencies": {
         "conventional-changelog-lint": "~1.1.9"
