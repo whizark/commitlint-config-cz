@@ -21,8 +21,8 @@ before_install:
     - npm install -g npm@latest
 
 install:
-    # - npm prune
-    - npm update
+    - npm prune
+    - npm install
 
 script:
     - npm install . -g >/dev/null && npm uninstall . -g >/dev/null

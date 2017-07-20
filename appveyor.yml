@@ -21,8 +21,8 @@ install:
     - npm config set spin false
     - npm config set progress false
     - npm install -g npm@latest
-    # - npm prune
-    - npm update
+    - npm prune
+    - npm install
 
 build: off
 
