@@ -140,13 +140,5 @@ module.exports = {
             'always',
             0,
         ],
-    },
-    wildcards: {
-        merge  : [
-            "/^(Merge pull request (.+?) from (.+?))|(Merge (.+?) into (.+?))$/",
-        ],
-        revert : [
-            '/^revert: (.+)/',
-        ],
-    },
+    }
 };
