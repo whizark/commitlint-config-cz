@@ -24,12 +24,12 @@ npm install commitlint-config-cz --save-dev
 
 Extend `commitlint-config-cz` in `commitlint.config.js`.
 
-```json
-{
-    "extends": [
-        "cz"
+```js
+module.exports = {
+    extends: [
+        'cz'
     ]
-}
+};
 ```
 
 [commitlint]: https://github.com/marionebl/commitlint
