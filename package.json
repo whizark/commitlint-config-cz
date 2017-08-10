@@ -45,10 +45,10 @@
     },
     "devDependencies" : {
         "@commitlint/cli"       : "latest",
-        "coveralls"             : "~2.13.0",
+        "coveralls"             : "~2.13.1",
         "intelli-espower-loader": "~1.0.1",
-        "mocha"                 : "~3.4.2",
-        "nyc"                   : "~11.0.3",
+        "mocha"                 : "~3.5.0",
+        "nyc"                   : "~11.1.0",
         "power-assert"          : "~1.4.4"
     },
     "peerDependencies": {
