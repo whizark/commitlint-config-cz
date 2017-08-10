@@ -44,7 +44,7 @@
         "app-root-path": "~2.0.1"
     },
     "devDependencies" : {
-        "@commitlint/cli"       : "latest",
+        "@commitlint/cli"       : "~3.1.2",
         "coveralls"             : "~2.13.1",
         "intelli-espower-loader": "~1.0.1",
         "mocha"                 : "~3.5.0",
@@ -52,6 +52,6 @@
         "power-assert"          : "~1.4.4"
     },
     "peerDependencies": {
-        "@commitlint/cli": "~3.0.3"
+        "@commitlint/cli": "~3.1.2"
     }
 }
