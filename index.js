@@ -4,7 +4,7 @@ const types  = require('./lib/types');
 const scopes = require('./lib/scopes');
 
 module.exports = {
-    rules    : {
+    rules: {
         'body-leading-blank'  : [
             2,
             'always',
@@ -140,5 +140,9 @@ module.exports = {
             'always',
             0,
         ],
+        'signed-off-by'       : [
+            0,
+            'always',
+        ]
     }
 };
