@@ -19,13 +19,6 @@ module.exports = {
             'always',
             0,
         ],
-        'body-tense'          : [
-            1,
-            'always',
-            [
-                'present-imperative',
-            ],
-        ],
         'footer-leading-blank': [
             2,
             'always',
@@ -40,13 +33,6 @@ module.exports = {
             'always',
             0,
         ],
-        'footer-tense'        : [
-            1,
-            'always',
-            [
-                'present-imperative',
-            ],
-        ],
         'header-max-length'   : [
             1,
             'always',
@@ -56,11 +42,6 @@ module.exports = {
             1,
             'always',
             0,
-        ],
-        'lang'                : [
-            1,
-            'always',
-            'eng',
         ],
         'scope-enum'          : [
             2,
@@ -108,13 +89,6 @@ module.exports = {
             1,
             'always',
             0,
-        ],
-        'subject-tense'       : [
-            2,
-            'always',
-            [
-                'present-imperative',
-            ],
         ],
         'type-enum'           : [
             2,
