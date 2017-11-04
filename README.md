@@ -32,6 +32,64 @@ module.exports = {
 };
 ```
 
+## Modules & API
+
+### `cz-config.js`
+
+Gets the `.cz-config.js` as an object in the package root.
+
+```javascript
+const czConfig = require('commitlint-config-cz/lib/cz-config')();
+````
+
+#### `get(path: string): Object`
+
+Gets the `cz-customizable` config object from a path.
+
+```javascript
+const getCzConfig = require('commitlint-config-cz/lib/cz-config').get;
+
+const czConfig = getCzConfig('path/to/.cz-config.js');
+````
+
+### `scopes.js`
+
+Gets the `value` for [scope-enum][] rule from the `.cz-config.js` in the package root.
+
+```javascript
+const scopes = require('commitlint-config-cz/lib/scopes')();
+````
+
+#### `get(config: Object): string[]`
+
+Gets the `value` for [scope-enum][] rule from a `cz-customizable` config object.
+
+```javascript
+const getScopes = require('commitlint-config-cz/lib/scopes').get;
+const czConfig  = { /* `cz-customizable` config object. */ };
+
+const scopes = getScopes(czConfig);
+````
+
+### `types.js`
+
+Gets the `value` for [type-enum][] rule from the `.cz-config.js` in the package root.
+
+```javascript
+const types = require('commitlint-config-cz/lib/types')();
+````
+
+#### `get(config: Object): string[]`
+
+Gets the `value` for [type-enum][] rule from a `cz-customizable` config object.
+
+```javascript
+const getTypes = require('commitlint-config-cz/lib/types').get;
+const czConfig = { /* `cz-customizable` config object. */ };
+
+const types = getTypes(czConfig);
+````
+
 [commitlint]: https://github.com/marionebl/commitlint
 [@whizark/cz-cli]: https://github.com/whizark/cz-cli
 [cz-customizable]: https://github.com/leonardoanalista/cz-customizable
@@ -47,3 +105,6 @@ module.exports = {
 
 [appveyor-image]: https://ci.appveyor.com/api/projects/status/github/whizark/commitlint-config-cz?branch=master&svg=true
 [appveyor-url]: https://ci.appveyor.com/project/whizark/commitlint-config-cz/branch/master
+
+[scope-enum]: http://marionebl.github.io/commitlint/#/reference-rules?id=scope-enum
+[type-enum]: http://marionebl.github.io/commitlint/#/reference-rules?id=type-enum
