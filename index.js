@@ -70,7 +70,7 @@ module.exports = {
         'scope-case'          : [
             2,
             'always',
-            'lowerCase',
+            'lower-case',
         ],
         'scope-empty'         : [
             1,
@@ -89,7 +89,7 @@ module.exports = {
         'subject-case'        : [
             2,
             'always',
-            'lowerCase',
+            'lower-case',
         ],
         'subject-empty'       : [
             2,
@@ -124,7 +124,7 @@ module.exports = {
         'type-case'           : [
             2,
             'always',
-            'lowerCase',
+            'lower-case',
         ],
         'type-empty'          : [
             2,
