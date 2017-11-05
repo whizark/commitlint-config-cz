@@ -39,7 +39,7 @@ There are some modules and API to convert `cz-customizable`'s config into `commi
 
 ### `config.js`
 
-Converts and gets the `commitlint` config from the `.cz-config.js` in the package root.
+Gets the `commitlint` config from the `.cz-config.js` in the package root.
 
 ```javascript
 const config = require('commitlint-config-cz/lib/config')();
@@ -47,7 +47,7 @@ const config = require('commitlint-config-cz/lib/config')();
 
 #### `get(pathOrCzConfig: string | Object, defaultConfig?: Object): Object`
 
-Converts and gets the `commitlint` config from a `cz-customizable` config.
+Gets the `commitlint` config from a `cz-customizable` config.
 
 ```javascript
 const getConfig = require('commitlint-config-cz/lib/config').get;
