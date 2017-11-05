@@ -28,6 +28,7 @@ Extend `commitlint-config-cz` in `commitlint.config.js`.
 ```js
 module.exports = {
     extends: [
+        'other-config',
         'cz'
     ]
 };
