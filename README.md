@@ -34,6 +34,8 @@ module.exports = {
 
 ## Modules & API
 
+There are some modules and API to convert `cz-customizable`'s config into `commitlint`'s config.
+
 ### `cz-config.js`
 
 Gets the `.cz-config.js` as an object in the package root.
@@ -60,7 +62,7 @@ Gets the `value` for [scope-enum][] rule from the `.cz-config.js` in the package
 const scopes = require('commitlint-config-cz/lib/scopes')();
 ````
 
-#### `get(config: Object): string[]`
+#### `get(czConfig: Object): string[]`
 
 Gets the `value` for [scope-enum][] rule from a `cz-customizable` config object.
 
@@ -79,7 +81,7 @@ Gets the `value` for [type-enum][] rule from the `.cz-config.js` in the package 
 const types = require('commitlint-config-cz/lib/types')();
 ````
 
-#### `get(config: Object): string[]`
+#### `get(czConfig: Object): string[]`
 
 Gets the `value` for [type-enum][] rule from a `cz-customizable` config object.
 
