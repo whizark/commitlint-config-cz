@@ -5,7 +5,8 @@
 [![Build status][appveyor-image]][appveyor-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 
-[commitlint][] sharable configuration files.
+[commitlint][] sharable configuration files, which also includes modules & API
+for config conversion.
 
 If `.cz-config.js` that is for [@whizark/cz-cli][] or
 [cz-customizable][] exists in your package root directory, its
