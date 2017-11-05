@@ -41,7 +41,7 @@ There are some modules and API to convert `cz-customizable`'s config into `commi
 
 Gets the `commitlint` config from the `.cz-config.js` in the package root.
 
-```javascript
+```js
 const config = require('commitlint-config-cz/lib/config')();
 ````
 
@@ -49,14 +49,14 @@ const config = require('commitlint-config-cz/lib/config')();
 
 Gets the `commitlint` config from a `cz-customizable` config.
 
-```javascript
+```js
 const getConfig = require('commitlint-config-cz/lib/config').get;
 
 // From a path.
 const config = getConfig('path/to/.cz-config.js');
 ````
 
-```javascript
+```js
 const getConfig = require('commitlint-config-cz/lib/config').get;
 const czConfig  = { /* `cz-customizable` config object. */ };
 
@@ -64,7 +64,7 @@ const czConfig  = { /* `cz-customizable` config object. */ };
 const config = getConfig(czConfig);
 ````
 
-```javascript
+```js
 const getConfig     = require('commitlint-config-cz/lib/config').get;
 const czConfig      = { /* `cz-customizable` config object. */ };
 const defaultConfig = {  // The default `commitlint` config.
@@ -97,7 +97,7 @@ const config = getConfig(czConfig, defaultConfig);
 
 Gets the `.cz-config.js` as an object in the package root.
 
-```javascript
+```js
 const czConfig = require('commitlint-config-cz/lib/cz-config')();
 ````
 
@@ -105,7 +105,7 @@ const czConfig = require('commitlint-config-cz/lib/cz-config')();
 
 Gets the `cz-customizable` config object from a path.
 
-```javascript
+```js
 const getCzConfig = require('commitlint-config-cz/lib/cz-config').get;
 
 const czConfig = getCzConfig('path/to/.cz-config.js');
@@ -117,7 +117,7 @@ const czConfig = getCzConfig('path/to/.cz-config.js');
 
 Gets the `value` for [scope-enum][] rule from the `.cz-config.js` in the package root.
 
-```javascript
+```js
 const scopes = require('commitlint-config-cz/lib/scopes')();
 ````
 
@@ -125,7 +125,7 @@ const scopes = require('commitlint-config-cz/lib/scopes')();
 
 Gets the `value` for [scope-enum][] rule from a `cz-customizable` config object.
 
-```javascript
+```js
 const getScopes = require('commitlint-config-cz/lib/scopes').get;
 const czConfig  = { /* `cz-customizable` config object. */ };
 
@@ -138,7 +138,7 @@ const scopes = getScopes(czConfig);
 
 Gets the `value` for [type-enum][] rule from the `.cz-config.js` in the package root.
 
-```javascript
+```js
 const types = require('commitlint-config-cz/lib/types')();
 ````
 
@@ -146,7 +146,7 @@ const types = require('commitlint-config-cz/lib/types')();
 
 Gets the `value` for [type-enum][] rule from a `cz-customizable` config object.
 
-```javascript
+```js
 const getTypes = require('commitlint-config-cz/lib/types').get;
 const czConfig = { /* `cz-customizable` config object. */ };
 
