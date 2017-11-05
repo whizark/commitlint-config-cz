@@ -1,11 +1,11 @@
-const assert = require('power-assert');
-const path   = require('path');
-const config = require('../lib/cz-config');
+const assert   = require('power-assert');
+const path     = require('path');
+const CzConfig = require('../lib/cz-config');
 
 describe('cz-config', function () {
     describe('.get()', function () {
         it('should return an empty object when non-existent config path is given', function () {
-            assert.deepStrictEqual(config.get(), {});
+            assert.deepStrictEqual(CzConfig.get(), {});
         });
 
         it('should return an object that is loaded from the specified config file', function () {
@@ -35,7 +35,7 @@ describe('cz-config', function () {
                 },
             };
 
-            assert.deepStrictEqual(config.get(configPath), expected);
+            assert.deepStrictEqual(CzConfig.get(configPath), expected);
         });
     });
 });

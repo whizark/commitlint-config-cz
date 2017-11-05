@@ -1,10 +1,10 @@
 const assert = require('power-assert');
-const types  = require('../lib/types');
+const Types  = require('../lib/types');
 
 describe('types', function () {
     describe('.get()', function () {
         it('should return the default types if `types` does not exist in given config', function () {
-            assert.deepStrictEqual(types.get({}), types.defaults);
+            assert.deepStrictEqual(Types.get({}), Types.defaults);
         });
 
         it('should return the types in given config', function () {
@@ -32,7 +32,7 @@ describe('types', function () {
                 },
             };
 
-            assert.deepStrictEqual(types.get(config), ['type-1', 'type-2']);
+            assert.deepStrictEqual(Types.get(config), ['type-1', 'type-2']);
         });
     });
 });
