@@ -41,7 +41,8 @@
         "ci:coveralls"    : "nyc report --reporter=text-lcov | coveralls"
     },
     "dependencies"    : {
-        "app-root-path": "~2.0.1"
+        "app-root-path"   : "~2.0.1",
+        "lodash.clonedeep": "~4.5.0"
     },
     "devDependencies" : {
         "@commitlint/cli"       : "~4.2.2",

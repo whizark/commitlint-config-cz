@@ -37,6 +37,62 @@ module.exports = {
 
 There are some modules and API to convert `cz-customizable`'s config into `commitlint`'s config.
 
+### `config.js`
+
+Converts and gets the `commitlint` config from the `.cz-config.js` in the package root.
+
+```javascript
+const config = require('commitlint-config-cz/lib/config')();
+````
+
+#### `get(pathOrCzConfig: string | Object, defaultConfig?: Object): Object`
+
+Converts and gets the `commitlint` config from a `cz-customizable` config.
+
+```javascript
+const getConfig = require('commitlint-config-cz/lib/config').get;
+
+// From a path.
+const config = getConfig('path/to/.cz-config.js');
+````
+
+```javascript
+const getConfig = require('commitlint-config-cz/lib/config').get;
+const czConfig  = { /* `cz-customizable` config object. */ };
+
+// From a `cz-customizable` config object.
+const config = getConfig(czConfig);
+````
+
+```javascript
+const getConfig     = require('commitlint-config-cz/lib/config').get;
+const czConfig      = { /* `cz-customizable` config object. */ };
+const defaultConfig = {  // The default `commitlint` config.
+    rules: {
+        'scope-enum': [  // rule
+            2,           // [1] level
+            'always',    // [2] applicability
+            [],          // [3] value
+        ],
+        'type-enum' : [  // rule
+            2,           // [1] level
+            'always',    // [2] applicability
+            [],          // [3] value
+        ],
+    },
+};
+
+// Converts and merges the `cz-customizable` config with the default `commitlint` config.
+const config = getConfig(czConfig, defaultConfig);
+````
+
+1. If `cz-customizable` config has `scopes`, `scopeOverrides` or `types` field,
+   the value(s) [3] of the default `commitlint` config is/are **REPLACED** by converted value(s).  
+   Level [1] and applicability [2] remain as they are.
+2. `scope-enum` rule or/and `type-enum` rule is/are completely **REMOVED**, if its value is an empty array.
+
+---
+
 ### `cz-config.js`
 
 Gets the `.cz-config.js` as an object in the package root.
@@ -54,6 +110,8 @@ const getCzConfig = require('commitlint-config-cz/lib/cz-config').get;
 
 const czConfig = getCzConfig('path/to/.cz-config.js');
 ````
+
+---
 
 ### `scopes.js`
 
@@ -73,6 +131,8 @@ const czConfig  = { /* `cz-customizable` config object. */ };
 
 const scopes = getScopes(czConfig);
 ````
+
+---
 
 ### `types.js`
 
