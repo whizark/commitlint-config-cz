@@ -1,6 +1,6 @@
 {
     "name"            : "commitlint-config-cz",
-    "version"         : "0.9.0",
+    "version"         : "0.10.0",
     "description"     : "commitlint sharable configuration files",
     "keywords"        : [
         "git",
