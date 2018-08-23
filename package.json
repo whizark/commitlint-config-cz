@@ -41,12 +41,12 @@
         "ci:coveralls"    : "nyc report --reporter=text-lcov | coveralls"
     },
     "dependencies"    : {
-        "app-root-path"   : "~2.0.1",
+        "app-root-path"   : "~2.1.0",
         "lodash.clonedeep": "~4.5.0"
     },
     "devDependencies" : {
         "@commitlint/cli"       : "~7.0.0",
-        "coveralls"             : "~3.0.1",
+        "coveralls"             : "~3.0.2",
         "intelli-espower-loader": "~1.0.1",
         "mocha"                 : "~5.2.0",
         "nyc"                   : "~12.0.2",
