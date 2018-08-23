@@ -1,3 +1,17 @@
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+<a name="0.10.1"></a>
+## [0.10.1](https://github.com/whizark/commitlint-config-cz/compare/v0.10.0...v0.10.1) (2018-08-23)
+
+
+### Bug Fixes
+
+* error is thrown if there's no scope-{enum,type} rule at all ([1dc784e](https://github.com/whizark/commitlint-config-cz/commit/1dc784e)), closes [#3](https://github.com/whizark/commitlint-config-cz/issues/3)
+
+
+
 <a name="0.10.0"></a>
 ## 0.10.0 (2018-06-22)
 
@@ -160,6 +174,3 @@ module.exports = {
 * rename repo/package name to `conventional-changelog-lint-config-cz` ([50883d3](https://github.com/whizark/commitlint-config-cz/commit/50883d3))
 * use latest `conventional-changelog-lint` as devDependencies ([18ea8fb](https://github.com/whizark/commitlint-config-cz/commit/18ea8fb))
 * use reference for link to `conventional-changelog-lint` ([cc9341a](https://github.com/whizark/commitlint-config-cz/commit/cc9341a))
-
-
-
