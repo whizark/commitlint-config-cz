@@ -38,7 +38,12 @@
         "watch"           : "npm run --silent watch:test",
         "ci:test:mocha"   : "npm run test:mocha",
         "ci:test"         : "nyc npm run ci:test:mocha",
-        "ci:coveralls"    : "nyc report --reporter=text-lcov | coveralls"
+        "ci:coveralls"    : "nyc report --reporter=text-lcov | coveralls",
+        "release:first"   : "standard-version --sign --first-release",
+        "release:patch"   : "standard-version --sign --release-as patch --commit-all",
+        "release:minor"   : "standard-version --sign --release-as minor --commit-all",
+        "release:major"   : "standard-version --sign --release-as major --commit-all",
+        "release"         : "standard-version --sign --commit-all"
     },
     "dependencies"    : {
         "app-root-path"   : "~2.1.0",
@@ -50,7 +55,8 @@
         "intelli-espower-loader": "~1.0.1",
         "mocha"                 : "~5.2.0",
         "nyc"                   : "~12.0.2",
-        "power-assert"          : "~1.6.0"
+        "power-assert"          : "~1.6.0",
+        "standard-version"      : "~4.4.0"
     },
     "peerDependencies": {
         "@commitlint/cli": "~7.0.0"
