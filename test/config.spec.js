@@ -173,5 +173,91 @@ describe('config', function () {
                 assert.deepStrictEqual(Config.get(configPath, defaultConfig), expected);
             }
         );
+
+        it('should ignore `scopes` and `scopeOverrides` when commitlint config has no `scope-enum` rule',
+            function () {
+                const configPath = path.join(__dirname, 'fixtures/.cz-config.js');
+
+                const defaultConfig = {
+                    rules: {
+                        'body-leading-blank'  : [
+                            2,
+                            'always',
+                        ],
+                        'type-enum' : [
+                            1,
+                            'never',
+                            [
+                                'type-3',
+                                'type-4',
+                            ],
+                        ],
+                    },
+                };
+
+                const expected = {
+                    rules: {
+                        'body-leading-blank'  : [
+                            2,
+                            'always',
+                        ],
+                        'type-enum' : [
+                            1,
+                            'never',
+                            [
+                                'type-1',
+                                'type-2',
+                            ],
+                        ],
+                    }
+                };
+
+                assert.deepStrictEqual(Config.get(configPath, defaultConfig), expected);
+            }
+        );
+
+        it('should ignore `types` when commitlint config has no `type-enum` rule',
+            function () {
+                const configPath = path.join(__dirname, 'fixtures/.cz-config.js');
+
+                const defaultConfig = {
+                    rules: {
+                        'body-leading-blank'  : [
+                            2,
+                            'always',
+                        ],
+                        'scope-enum': [
+                            1,
+                            'never',
+                            [
+                                'scope-4',
+                                'scope-5',
+                                'scope-6',
+                            ],
+                        ],
+                    },
+                };
+
+                const expected = {
+                    rules: {
+                        'body-leading-blank'  : [
+                            2,
+                            'always',
+                        ],
+                        'scope-enum': [
+                            1,
+                            'never',
+                            [
+                                'scope-1',
+                                'scope-2',
+                                'scope-3',
+                            ],
+                        ],
+                    }
+                };
+
+                assert.deepStrictEqual(Config.get(configPath, defaultConfig), expected);
+            }
+        );
     });
 });
