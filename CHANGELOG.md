@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/whizark/commitlint-config-cz/compare/v0.10.1...v0.11.0) (2018-12-24)
+
+
+### Features
+
+* support `config.cz-customizable.config` entry in `package.json` ([753036d](https://github.com/whizark/commitlint-config-cz/commit/753036d)) (zman)
+
+
+
 <a name="0.10.1"></a>
 ## [0.10.1](https://github.com/whizark/commitlint-config-cz/compare/v0.10.0...v0.10.1) (2018-08-23)
 
