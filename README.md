@@ -5,13 +5,20 @@
 [![Build status][appveyor-image]][appveyor-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 
-[commitlint][] sharable configuration files, which also includes modules & API
-for config conversion.
+[commitlint][] sharable configuration files for [cz-customizable][]
+(customizable [Commitizen][commitizen] adapter for [conventional commits][conventional-commits] and [conventional changelog][conventional-changelog]).
 
-If `.cz-config.js` that is for [@whizark/cz-cli][] or
-[cz-customizable][] exists in your package root directory, its
-`{types,scopes,scopeOverrides}` are merged with
-`rules.{type-enum,scope-enum}`.
+You can now **consistently manage your commit types/scopes** for cz-customizable and commitlint **in one place**.
+
+commitlint-config-cz **merges** `{types,scopes,scopeOverrides}` (cz-customizable config) with
+`rules.{type-enum,scope-enum}` (commitlint config) and **includes some modules and API** for config conversion.
+
+## Supported Config
+
+commitlint-config-cz use only one config in the following order of precedence.
+
+1. [`config.cz-customizable.config`][cz-customizable-configure] in `package.json`.
+2. `.cz-config.js` in your package root (supported by [@whizark/cz-cli][]).
 
 ## Installation
 
@@ -23,7 +30,7 @@ npm install commitlint-config-cz --save-dev
 
 ## Usage
 
-Extend `commitlint-config-cz` in `commitlint.config.js`.
+Extend your commitlint config by `cz` in `commitlint.config.js`.
 
 ```js
 module.exports = {
@@ -36,11 +43,11 @@ module.exports = {
 
 ## Modules & API
 
-There are some modules and API to convert `cz-customizable`'s config into `commitlint`'s config.
+commitlint-config-cz includes some modules and API for config conversion.
 
 ### `config.js`
 
-Gets the `commitlint` config from the `.cz-config.js` in the package root.
+Gets the converted commitlint config from the cz-customizable config which is defined in `package.json` or `.cz-config.js` in your package root.
 
 ```js
 const config = require('commitlint-config-cz/lib/config')();
@@ -48,7 +55,7 @@ const config = require('commitlint-config-cz/lib/config')();
 
 #### `get(pathOrCzConfig: string | Object, defaultConfig?: Object): Object`
 
-Gets the `commitlint` config from a `cz-customizable` config.
+Gets the commitlint config from a path to config file.
 
 ```js
 const getConfig = require('commitlint-config-cz/lib/config').get;
@@ -87,16 +94,16 @@ const defaultConfig = {  // The default `commitlint` config.
 const config = getConfig(czConfig, defaultConfig);
 ````
 
-1. If `cz-customizable` config has `scopes`, `scopeOverrides` or `types` field,
-   the value(s) [3] of the default `commitlint` config is/are **REPLACED** by converted value(s).  
+1. If cz-customizable config has `scopes`, `scopeOverrides` or `types` field,
+   the value(s) [3] of the default commitlint config is/are **REPLACED** by converted value(s).  
    Level [1] and applicability [2] remain as they are.
-2. `scope-enum` rule or/and `type-enum` rule is/are completely **REMOVED**, if its value is an empty array.
+2. `scope-enum` rule or/and `type-enum` rule is/are **REMOVED**, if its value is an empty array.
 
 ---
 
 ### `cz-config.js`
 
-Gets the `.cz-config.js` as an object in the package root.
+Gets the cz-customizable config as an object from `package.json` or `.cz-config.js` in your package root.
 
 ```js
 const czConfig = require('commitlint-config-cz/lib/cz-config')();
@@ -104,7 +111,7 @@ const czConfig = require('commitlint-config-cz/lib/cz-config')();
 
 #### `get(path: string): Object`
 
-Gets the `cz-customizable` config object from a path.
+Gets the cz-customizable config as an object from a path.
 
 ```js
 const getCzConfig = require('commitlint-config-cz/lib/cz-config').get;
@@ -116,7 +123,7 @@ const czConfig = getCzConfig('path/to/.cz-config.js');
 
 ### `scopes.js`
 
-Gets the `value` for [scope-enum][] rule from the `.cz-config.js` in the package root.
+Gets the value for [scope-enum][] rule from `package.json` or `.cz-config.js` in your package root.
 
 ```js
 const scopes = require('commitlint-config-cz/lib/scopes')();
@@ -124,11 +131,11 @@ const scopes = require('commitlint-config-cz/lib/scopes')();
 
 #### `get(czConfig: Object): string[]`
 
-Gets the `value` for [scope-enum][] rule from a `cz-customizable` config object.
+Gets the value for [scope-enum][] rule from a cz-customizable config object.
 
 ```js
 const getScopes = require('commitlint-config-cz/lib/scopes').get;
-const czConfig  = { /* `cz-customizable` config object. */ };
+const czConfig  = { /* cz-customizable config object. */ };
 
 const scopes = getScopes(czConfig);
 ````
@@ -137,7 +144,7 @@ const scopes = getScopes(czConfig);
 
 ### `types.js`
 
-Gets the `value` for [type-enum][] rule from the `.cz-config.js` in the package root.
+Gets the value for [type-enum][] rule from `package.json` or `.cz-config.js` in your package root.
 
 ```js
 const types = require('commitlint-config-cz/lib/types')();
@@ -145,7 +152,7 @@ const types = require('commitlint-config-cz/lib/types')();
 
 #### `get(czConfig: Object): string[]`
 
-Gets the `value` for [type-enum][] rule from a `cz-customizable` config object.
+Gets the value for [type-enum][] rule from `package.json` or `cz-customizable` config object.
 
 ```js
 const getTypes = require('commitlint-config-cz/lib/types').get;
@@ -155,8 +162,12 @@ const types = getTypes(czConfig);
 ````
 
 [commitlint]: https://github.com/marionebl/commitlint
-[@whizark/cz-cli]: https://github.com/whizark/cz-cli
 [cz-customizable]: https://github.com/leonardoanalista/cz-customizable
+[commitizen]: https://github.com/commitizen/cz-cli
+[conventional-commits]: https://www.conventionalcommits.org
+[conventional-changelog]: https://github.com/conventional-changelog/conventional-changelog
+[cz-customizable-configure]: https://github.com/leonardoanalista/cz-customizable#configure
+[@whizark/cz-cli]: https://github.com/whizark/cz-cli
 
 [npm-image]: https://img.shields.io/npm/v/commitlint-config-cz.svg
 [npm-url]: https://www.npmjs.com/commitlint-config-cz
