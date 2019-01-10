@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.1"></a>
+## [0.11.1](https://github.com/whizark/commitlint-config-cz/compare/v0.11.0...v0.11.1) (2019-01-10)
+
+
+### Bug Fixes
+
+* **peer-deps:** update peerDep [@commitlint](https://github.com/commitlint)/cli from 7.0.x to 7.x.x ([2d61d1d](https://github.com/whizark/commitlint-config-cz/commit/2d61d1d)) (sharvit)
+
+
+
 <a name="0.11.0"></a>
 # [0.11.0](https://github.com/whizark/commitlint-config-cz/compare/v0.10.1...v0.11.0) (2018-12-24)
 
