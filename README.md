@@ -18,7 +18,7 @@ commitlint-config-cz **merges** `{types,scopes,scopeOverrides}` (cz-customizable
 commitlint-config-cz use only one config in the following order of precedence.
 
 1. [`config.cz-customizable.config`][cz-customizable-configure] in `package.json`.
-2. `.cz-config.js` in your package root (supported by [@whizark/cz-cli][]).
+2. `.cz-config.js` in your package root (supported by cz-customizable and [@whizark/cz-cli][]).
 
 ## Installation
 
