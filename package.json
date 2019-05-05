@@ -56,7 +56,7 @@
     "mocha": "6.1.4",
     "nyc": "14.1.0",
     "power-assert": "1.6.1",
-    "standard-version": "5.0.2"
+    "standard-version": "6.0.1"
   },
   "peerDependencies": {
     "@commitlint/cli": "^7.0.0"
