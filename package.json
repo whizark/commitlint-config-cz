@@ -50,7 +50,7 @@
     "lodash.clonedeep": "~4.5.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "7.5.2",
+    "@commitlint/cli": "7.6.0",
     "coveralls": "3.0.3",
     "intelli-espower-loader": "1.0.1",
     "mocha": "6.1.4",
