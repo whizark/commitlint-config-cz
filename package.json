@@ -54,7 +54,7 @@
     "coveralls": "3.0.3",
     "intelli-espower-loader": "1.0.1",
     "mocha": "6.1.4",
-    "nyc": "14.1.0",
+    "nyc": "14.1.1",
     "power-assert": "1.6.1",
     "standard-version": "6.0.1"
   },
