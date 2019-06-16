@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.12.0"></a>
+# [0.12.0](https://github.com/whizark/commitlint-config-cz/compare/v0.11.1...v0.12.0) (2019-06-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency app-root-path to ~2.2.0 ([8f06c50](https://github.com/whizark/commitlint-config-cz/commit/8f06c50))
+
+
+### ci
+
+* drop Node 6 support, add Node 12 ([04c106d](https://github.com/whizark/commitlint-config-cz/commit/04c106d))
+
+
+### BREAKING CHANGES
+
+* Node 6 support has been dropped due to EOL.
+
+
+
 <a name="0.11.1"></a>
 ## [0.11.1](https://github.com/whizark/commitlint-config-cz/compare/v0.11.0...v0.11.1) (2019-01-10)
 
