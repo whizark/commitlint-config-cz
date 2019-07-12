@@ -51,7 +51,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "8.0.0",
-    "coveralls": "3.0.4",
+    "coveralls": "3.0.5",
     "intelli-espower-loader": "1.0.1",
     "mocha": "6.1.4",
     "nyc": "14.1.1",
