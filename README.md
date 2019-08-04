@@ -22,11 +22,13 @@ commitlint-config-cz use only one config in the following order of precedence.
 
 ## Installation
 
-Install `commitlint-config-cz` as a local dependency.
+1. [Install & setup (commitizen &) cz-customizable.][cz-customizable]
+2. [Install commitlint.][commitlint-getting-started]
+3. Install `commitlint-config-cz` as a local dependency.
 
-```sh
-npm install commitlint-config-cz --save-dev
-```
+   ```sh
+   npm install commitlint-config-cz --save-dev
+   ```
 
 ## Usage
 
@@ -162,6 +164,7 @@ const types = getTypes(czConfig);
 ````
 
 [commitlint]: https://github.com/conventional-changelog/commitlint
+[commitlint-getting-started]: https://github.com/conventional-changelog/commitlint#getting-started
 [cz-customizable]: https://github.com/leonardoanalista/cz-customizable
 [commitizen]: https://github.com/commitizen/cz-cli
 [conventional-commits]: https://www.conventionalcommits.org
