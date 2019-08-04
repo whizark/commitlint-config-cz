@@ -161,7 +161,7 @@ const czConfig = { /* `cz-customizable` config object. */ };
 const types = getTypes(czConfig);
 ````
 
-[commitlint]: https://github.com/marionebl/commitlint
+[commitlint]: https://github.com/conventional-changelog/commitlint
 [cz-customizable]: https://github.com/leonardoanalista/cz-customizable
 [commitizen]: https://github.com/commitizen/cz-cli
 [conventional-commits]: https://www.conventionalcommits.org
@@ -180,5 +180,5 @@ const types = getTypes(czConfig);
 [appveyor-image]: https://ci.appveyor.com/api/projects/status/github/whizark/commitlint-config-cz?branch=master&svg=true
 [appveyor-url]: https://ci.appveyor.com/project/whizark/commitlint-config-cz/branch/master
 
-[scope-enum]: http://marionebl.github.io/commitlint/#/reference-rules?id=scope-enum
-[type-enum]: http://marionebl.github.io/commitlint/#/reference-rules?id=type-enum
+[scope-enum]: https://commitlint.js.org/#/reference-rules?id=scope-enum
+[type-enum]: https://commitlint.js.org/#/reference-rules?id=type-enum
