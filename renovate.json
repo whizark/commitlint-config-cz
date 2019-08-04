@@ -2,6 +2,7 @@
   "extends": [
     "config:base",
     ":assignAndReview(whizark)",
+    ":label(dependencies)",
     ":semanticCommitType(build)",
     ":semanticCommitScopeDisabled"
   ]
