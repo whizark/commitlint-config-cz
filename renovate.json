@@ -1,6 +1,7 @@
 {
   "extends": [
     "config:base",
+    ":assignAndReview(whizark)",
     ":semanticCommitType(build)",
     ":semanticCommitScopeDisabled"
   ]
