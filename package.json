@@ -46,7 +46,7 @@
     "release": "standard-version --sign --commit-all"
   },
   "dependencies": {
-    "app-root-path": "~2.2.0",
+    "app-root-path": "~3.0.0",
     "lodash.clonedeep": "~4.5.0"
   },
   "devDependencies": {
