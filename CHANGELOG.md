@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0](https://github.com/whizark/commitlint-config-cz/compare/v0.12.1...v0.13.0) (2020-02-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* Node.js 8 support has been dropped due to EOL.
+
+### Bug Fixes
+
+* update dependency app-root-path to v3 ([be58d72](https://github.com/whizark/commitlint-config-cz/commit/be58d729909daf7dcd250ee6db20f919da7deae9))
+
+
+### ci
+
+* drop Node.js 8 support ([b8c5b82](https://github.com/whizark/commitlint-config-cz/commit/b8c5b829325a072805bc143d3d8ca1c56cf3d321))
+
 ### [0.12.1](https://github.com/whizark/commitlint-config-cz/compare/v0.12.0...v0.12.1) (2019-08-04)
 
 <a name="0.12.0"></a>
