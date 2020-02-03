@@ -1,9 +1,10 @@
 {
-  "extends": [
-    "config:base",
-    ":assignAndReview(whizark)",
-    ":label(dependencies)",
-    ":semanticCommitType(build)",
-    ":semanticCommitScopeDisabled"
-  ]
+    "extends": [
+        "config:base",
+        ":assignAndReview(whizark)",
+        ":label(dependencies)",
+        ":semanticCommits",
+        ":semanticCommitTypeAll(build)",
+        ":semanticCommitScopeDisabled"
+    ]
 }
