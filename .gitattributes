@@ -4,6 +4,7 @@
 .gitignore export-ignore
 /.dependabot/ export-ignore
 .editorconfig export-ignore
+.version.json export-ignore
 .npmrc export-ignore
 package.json export-ignore
 package-lock.json export-ignore
