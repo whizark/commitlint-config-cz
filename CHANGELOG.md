@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.1](https://github.com/whizark/commitlint-config-cz/compare/v0.13.0...v0.13.1) (2020-03-19)
+
+
+### Build System
+
+* [security] bump acorn from 5.7.3 to 5.7.4 ([8e664fa](https://github.com/whizark/commitlint-config-cz/commit/8e664faf1b6c3b3ee0564b28b4cdbe5417ae696f))
+* add standard-version config ([741d3b4](https://github.com/whizark/commitlint-config-cz/commit/741d3b4606e81e64595d9ef97b69feac32fb5e71))
+* update dependency coveralls to v3.0.11 ([fefe423](https://github.com/whizark/commitlint-config-cz/commit/fefe42311cb56b8047b7c94df69709d88ba1e239))
+* update dependency mocha to v7.1.0 ([519f65a](https://github.com/whizark/commitlint-config-cz/commit/519f65aaceb0b8a68e14dec92f71806ca0fb9d05))
+* update dependency mocha to v7.1.1 ([8e895d5](https://github.com/whizark/commitlint-config-cz/commit/8e895d5e3fdebe495d261cb13fbbc7dfe431ecb1))
+* update minimist to 1.2.5 to fix low severity vulnerabilities ([74a4066](https://github.com/whizark/commitlint-config-cz/commit/74a4066ce10d0d9aeff851e224e0b4dd11be3f3b))
+
 ## [0.13.0](https://github.com/whizark/commitlint-config-cz/compare/v0.12.1...v0.13.0) (2020-02-03)
 
 
