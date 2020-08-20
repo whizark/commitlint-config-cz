@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.2](https://github.com/whizark/commitlint-config-cz/compare/v0.13.1...v0.13.2) (2020-08-20)
+
+
+### Build System
+
+* fix low severity vulnerabilities ([63320b8](https://github.com/whizark/commitlint-config-cz/commit/63320b85b827fa216cc3adb0513db4ce1b03ee6e))
+* update dependency @commitlint/cli to v9 ([72df7e9](https://github.com/whizark/commitlint-config-cz/commit/72df7e95b6fa52683c6a1f40a9313794abd43f53))
+* update dependency coveralls to v3.1.0 ([ea93232](https://github.com/whizark/commitlint-config-cz/commit/ea9323227a982212b1051a69fd05250ea1b79468))
+* update dependency mocha to v7.1.2 ([ddea362](https://github.com/whizark/commitlint-config-cz/commit/ddea3629b5549067ee8d0d837a9f48918e12ac61))
+* update dependency mocha to v7.2.0 ([4e7c113](https://github.com/whizark/commitlint-config-cz/commit/4e7c11353ab98904b32c7cdffddf191e7977e227))
+* update dependency mocha to v8 ([716d5a1](https://github.com/whizark/commitlint-config-cz/commit/716d5a13a35f535b3bbbf0edbab8fb51d7cf3568))
+* update dependency mocha to v8.1.1 ([2d84aca](https://github.com/whizark/commitlint-config-cz/commit/2d84aca93e7480d43ae30e867c7b961a39f4a478))
+* update dependency nyc to v15.0.1 ([2770243](https://github.com/whizark/commitlint-config-cz/commit/277024358b63f075830530857b8a88b7265f5036))
+* update dependency nyc to v15.1.0 ([7fe075c](https://github.com/whizark/commitlint-config-cz/commit/7fe075c533bd54a7263eb1b8d871a1f85b43b295))
+* update dependency standard-version to v8 ([51b1378](https://github.com/whizark/commitlint-config-cz/commit/51b13783075f9aa81a056fe4dc8ef542fc040b5a))
+* update dependency standard-version to v8.0.1 [security] ([99ab240](https://github.com/whizark/commitlint-config-cz/commit/99ab2401ee71f68db6f6c364615541b62cd74f40))
+* update dependency standard-version to v9 ([10535f4](https://github.com/whizark/commitlint-config-cz/commit/10535f44dafdd3c702fb8c96972e7ea38e4b64fa))
+
 ### [0.13.1](https://github.com/whizark/commitlint-config-cz/compare/v0.13.0...v0.13.1) (2020-03-19)
 
 
