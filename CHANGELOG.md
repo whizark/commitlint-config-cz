@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.13.3](https://github.com/whizark/commitlint-config-cz/compare/v0.13.1...v0.13.3) (2021-12-20)
+
+
+### Build System
+
+* [security] bump hosted-git-info from 2.7.1 to 2.8.9 ([c526430](https://github.com/whizark/commitlint-config-cz/commit/c52643079539ed78f01eb1ba2c896a2ccf819ed7))
+* [security] bump ini from 1.3.5 to 1.3.8 ([e753839](https://github.com/whizark/commitlint-config-cz/commit/e753839e1d92fb3b0ed637b231144e0f4c11b274))
+* [security] bump y18n from 4.0.0 to 4.0.3 ([81d216e](https://github.com/whizark/commitlint-config-cz/commit/81d216e1c00f1ec09d83b639bb236eb7e0206d40))
+* fix low severity vulnerabilities ([63320b8](https://github.com/whizark/commitlint-config-cz/commit/63320b85b827fa216cc3adb0513db4ce1b03ee6e))
+* fix vulnerable dependencies ([fd61a18](https://github.com/whizark/commitlint-config-cz/commit/fd61a18e68b022f871fca205a9f0c014fd6b9d8a))
+* remove peerDependencies ([d697c58](https://github.com/whizark/commitlint-config-cz/commit/d697c58e6b84097c884c20d3f2472aeb943ba6fc)), closes [#70](https://github.com/whizark/commitlint-config-cz/issues/70)
+* update dependencies ([164bd1a](https://github.com/whizark/commitlint-config-cz/commit/164bd1a862a521eee9601cbc5beaaeac062d876e))
+* update dependency @commitlint/cli to v13 ([05d8320](https://github.com/whizark/commitlint-config-cz/commit/05d832040fc6086aef14a283aa01431d5a65bdac))
+* update dependency @commitlint/cli to v9 ([72df7e9](https://github.com/whizark/commitlint-config-cz/commit/72df7e95b6fa52683c6a1f40a9313794abd43f53))
+* update dependency coveralls to v3.1.0 ([ea93232](https://github.com/whizark/commitlint-config-cz/commit/ea9323227a982212b1051a69fd05250ea1b79468))
+* update dependency mocha to v7.1.2 ([ddea362](https://github.com/whizark/commitlint-config-cz/commit/ddea3629b5549067ee8d0d837a9f48918e12ac61))
+* update dependency mocha to v7.2.0 ([4e7c113](https://github.com/whizark/commitlint-config-cz/commit/4e7c11353ab98904b32c7cdffddf191e7977e227))
+* update dependency mocha to v8 ([716d5a1](https://github.com/whizark/commitlint-config-cz/commit/716d5a13a35f535b3bbbf0edbab8fb51d7cf3568))
+* update dependency mocha to v8.1.1 ([2d84aca](https://github.com/whizark/commitlint-config-cz/commit/2d84aca93e7480d43ae30e867c7b961a39f4a478))
+* update dependency mocha to v8.1.2 ([92f46b1](https://github.com/whizark/commitlint-config-cz/commit/92f46b1eb21e3dfb5dabcb2b4939c1ec915c7c66))
+* update dependency mocha to v8.1.3 ([07dcc94](https://github.com/whizark/commitlint-config-cz/commit/07dcc946f0b9139d626a5f3af6e937c7ae4a8d28))
+* update dependency mocha to v8.2.1 ([8b7f890](https://github.com/whizark/commitlint-config-cz/commit/8b7f890cfcef627a8448394bbc51d5aa3235a00a))
+* update dependency mocha to v8.4.0 ([b92c1a3](https://github.com/whizark/commitlint-config-cz/commit/b92c1a3c078f3a3e9eb44f957e79232bf77d61b8))
+* update dependency nyc to v15.0.1 ([2770243](https://github.com/whizark/commitlint-config-cz/commit/277024358b63f075830530857b8a88b7265f5036))
+* update dependency nyc to v15.1.0 ([7fe075c](https://github.com/whizark/commitlint-config-cz/commit/7fe075c533bd54a7263eb1b8d871a1f85b43b295))
+* update dependency standard-version to v8 ([51b1378](https://github.com/whizark/commitlint-config-cz/commit/51b13783075f9aa81a056fe4dc8ef542fc040b5a))
+* update dependency standard-version to v8.0.1 [security] ([99ab240](https://github.com/whizark/commitlint-config-cz/commit/99ab2401ee71f68db6f6c364615541b62cd74f40))
+* update dependency standard-version to v9 ([10535f4](https://github.com/whizark/commitlint-config-cz/commit/10535f44dafdd3c702fb8c96972e7ea38e4b64fa))
+* update dependency standard-version to v9.3.2 ([c67fa48](https://github.com/whizark/commitlint-config-cz/commit/c67fa48f6460e2a9ec7b9bf5ffabc1baf00983d3))
+
 ### [0.13.2](https://github.com/whizark/commitlint-config-cz/compare/v0.13.1...v0.13.2) (2020-08-20)
 
 
